@@ -1,4 +1,4 @@
-# TIENDA NAIKE
+# RICK AND MORTY
 ## Aplicacion que toma datos desde una API externa hecha con react.js
 ___
 
