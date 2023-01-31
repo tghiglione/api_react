@@ -1,5 +1,6 @@
 import './ItemDetailContainer.css';
 import ItemDetail from '../ItemDetail/ItemDetail';
+import Navegation from '../Navegation/Navegation';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
@@ -10,28 +11,32 @@ const ItemDetailContainer=()=>{
     
 
     useEffect(()=>{
-        const listaStock= async()=>{
+        const characterList= async()=>{
             try{
                 const resp = await fetch('https://api.sampleapis.com/rickandmorty/characters');
                 const json = await resp.json();
-                const filtro= await json.filter(item=>item.id===parseInt(idCharacter));
-                setCharacter(filtro[0])
+                const characterFilter= await json.filter(item=>item.id===parseInt(idCharacter));
+                setCharacter(characterFilter[0])
             }
             catch(error){
                 console.log("hubo un error",error)
             }
         };
-        listaStock();
+        characterList();
     },[idCharacter]);
     return(
-        <>
+        <div className='itemDetailContainer'>
+            <Navegation/>
             <div className='detail-character'>
                 <ItemDetail character={character}/>
             </div>
-            <Link to='/list'>
-                <button> Volver al listado </button>
-            </Link>
-        </>
+            <div className='back-button'>
+                <Link to='/list'>
+                    <button className='back'> Volver al listado </button>
+                </Link>
+            </div>
+            
+        </div>
         
     )
 };

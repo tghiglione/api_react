@@ -1,0 +1,11 @@
+.name-detail{
+    color: #44281d;
+    background-color: #97ce4c;
+    font-size: 28px;
+    font-weight: bold;
+}
+.status-detail, .species-detail, .origin-detail{
+    color: #44281d;
+    background-color: #97ce4c;
+    font-size: 20px;
+}

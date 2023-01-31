@@ -23,13 +23,12 @@ const ItemListContainer=()=>{
 
     return(
         <>
-        <Navegation/>
-        {
-            load ? <h1>cargando personajes...</h1>
-            :
-            <ItemList characters={characters}/>
-        }
-        
+            <Navegation/>
+            {
+                load ? <h1>cargando personajes...</h1>
+                :
+                <ItemList characters={characters}/>
+            }
         </>
     )
 };

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 
 const Home=()=>{
     return(
-        <>
+        <div className='home'>
             <h1 className='title'>
                 Bienvenidos a la app de Rick and Morty
             </h1>
@@ -14,7 +14,7 @@ const Home=()=>{
                     <button className='list-btn'>VER PERSONAJES</button>
                 </Link>
             </div>
-        </>
+        </div>
        
     )
 };

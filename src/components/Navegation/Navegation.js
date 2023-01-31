@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Navegation.css';
+import Logo from '../../images/logo.png';
 
 const Navegation=()=>{
     const categories=[
@@ -11,13 +12,13 @@ const Navegation=()=>{
         {url:'/list',name:"Personajes"}
     ];
     const activeStyle= {
-        color:'blue',
+        color:'#97ce4c',
     }
     return (
     <Navbar collapseOnSelect expand="lg" variant="light">
       <Container>
         <Link to='/'>
-            <Navbar.Brand>Logo</Navbar.Brand>
+            <Navbar.Brand><img src={Logo} alt='Logo rick and morty' className="logo"/></Navbar.Brand>
         </Link>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav" className="navbar-links">

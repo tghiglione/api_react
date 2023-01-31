@@ -1,0 +1,14 @@
+.social{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.social-container{
+    width: fit-content;
+}
+.social-img{
+    width: 80px;
+    height: 60px;
+}

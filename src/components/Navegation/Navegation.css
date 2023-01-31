@@ -1,0 +1,22 @@
+.logo{
+    width: 250px;
+    height: 150px;
+}
+.navbar-links{
+    width: 50%;
+    justify-content: space-evenly;
+}
+.navbar-item{
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    color:#e4a788;
+    padding:5px;
+    border-radius: 5px;
+
+}
+.navbar-item:hover{
+    transform: scale(1.1);
+    background-color: #e89ac7;
+    color: #44281d;
+}
