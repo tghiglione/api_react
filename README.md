@@ -1,5 +1,5 @@
 # TIENDA NAIKE
-## Aplicacion e-commerce hecha con react.js
+## Aplicacion que toma datos desde una API externa hecha con react.js
 ___
 
 ## Como ejecutarlo
