@@ -4,6 +4,7 @@ import Navegation from '../Navegation/Navegation';
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import Footer from '../Footer/Footer';
 
 const ItemDetailContainer=()=>{
     const {idCharacter}=useParams();
@@ -25,19 +26,21 @@ const ItemDetailContainer=()=>{
         characterList();
     },[idCharacter]);
     return(
-        <div className='itemDetailContainer'>
+        <>
+        <header>
             <Navegation/>
-            <div className='detail-character'>
-                <ItemDetail character={character}/>
-            </div>
-            <div className='back-button'>
-                <Link to='/list'>
-                    <button className='back'> Volver al listado </button>
-                </Link>
-            </div>
-            
+        </header>
+        <h2 className='detail-title'>DETALLE DEL PERSONAJE</h2>     
+        <div className='detail-character'>
+            <ItemDetail character={character}/>
         </div>
-        
+        <div className='back-button'>
+            <Link to='/list'>
+                <button className='back'> Volver al listado </button>
+            </Link>
+        </div>
+        <Footer/>
+        </>    
     )
 };
 

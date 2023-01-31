@@ -14,8 +14,7 @@ const Home=()=>{
                     <button className='list-btn'>VER PERSONAJES</button>
                 </Link>
             </div>
-        </div>
-       
+        </div>            
     )
 };
 

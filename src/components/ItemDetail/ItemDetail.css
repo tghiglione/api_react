@@ -3,9 +3,13 @@
     background-color: #97ce4c;
     font-size: 28px;
     font-weight: bold;
+    padding: 5px;
+    border-radius: 10px;
 }
 .status-detail, .species-detail, .origin-detail{
     color: #44281d;
     background-color: #97ce4c;
     font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
 }

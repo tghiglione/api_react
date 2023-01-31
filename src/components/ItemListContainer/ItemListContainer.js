@@ -2,6 +2,8 @@ import './ItemListContainer.css';
 import ItemList from '../ItemList/ItemList';
 import { useState,useEffect } from 'react';
 import Navegation from '../Navegation/Navegation';
+import Footer from '../Footer/Footer';
+
 
 const ItemListContainer=()=>{
     const [characters,setCharacters]=useState([]);
@@ -23,12 +25,17 @@ const ItemListContainer=()=>{
 
     return(
         <>
-            <Navegation/>
+            <header>
+                <Navegation/>
+            </header>
+            <h2 className='list-title'>LISTA DE PERSONAJES</h2>
+            
             {
                 load ? <h1>cargando personajes...</h1>
                 :
                 <ItemList characters={characters}/>
             }
+            <Footer/>
         </>
     )
 };
