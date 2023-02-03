@@ -10,9 +10,9 @@ function App() {
     <BrowserRouter>
       <div className='App'>
         <Routes>
+          <Route path='/api_react/' element={<Home/>}/>
           <Route path='/list' element={<ItemListContainer/>}/>
           <Route path="/detail/:idCharacter" element={<ItemDetailContainer/>}/>
-          <Route path='/' element={<Home/>}/>
         </Routes>
       </div>
     </BrowserRouter>

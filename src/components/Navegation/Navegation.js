@@ -8,7 +8,7 @@ import Logo from '../../images/logo.png';
 
 const Navegation=()=>{
     const categories=[
-        {url:"/", name:"Inicio"},
+        {url:"/api_react/", name:"Inicio"},
         {url:'/list',name:"Personajes"}
     ];
     const activeStyle= {
