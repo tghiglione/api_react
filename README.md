@@ -4,6 +4,9 @@ ___
 
 ## Como ejecutarlo
 
+###Se puede ver por github pages con la direccion: https://tghiglione.github.io/api_react/
+
+O en su defecto:
 Clonar el repositorio de forma local y luego utilice los siguientes comandos en consola:
 
 ### `npm start`
